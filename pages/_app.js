@@ -1,5 +1,11 @@
-import '@/styles/globals.css'
+import '../styles/globals.scss'
+import Menu from '../components/Menu'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+    return <>
+      <Menu />
+      <Component {...pageProps} />
+    </>
 }
+
+export default MyApp
